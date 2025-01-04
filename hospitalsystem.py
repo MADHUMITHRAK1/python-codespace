@@ -28,4 +28,21 @@ def manage_patient(action):
             print("\nPatient not found!\n")
             
 def main():
-        
+    action={'1':'add','2':'display','3':'search','4':'delete'}
+    while True:
+        print("\n=====Hospital Management System=====")
+        print("1.Add Patient")
+        print("2.Display Patients")
+        print("3.Search Patient")
+        print("4.Delete Patient")
+        print("5.Exit")
+        choice=input("Enter your choice(1-5):")
+        if choice in action:
+            manage_patient(action[choice])
+        elif choice=='5':
+            print("\nThank you for using the system,Goodbye!\n")
+            break
+        else:
+            print("\nInvalid choice,please try again!\n")
+if __name__=="__main__":
+    main()
