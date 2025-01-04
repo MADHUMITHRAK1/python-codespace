@@ -1,5 +1,4 @@
-#character.py
-def countCh(str):
+def numberCharType(str):
     vowels,consonant,specialChar,digit=0
     for i in range(0,len(str)):
         ch=str[i]
@@ -18,4 +17,4 @@ def countCh(str):
     print("digit",digit)
     print("Special Character",specialChar)
 str=input("Enter first string:")
-countCh(str)
+numberCharType(str)
